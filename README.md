@@ -1,19 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Celebrare Photo Gallery
 
-Currently, two official plugins are available:
+A responsive photo gallery built for the Celebrare Frontend React Internship pre-screening assignment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Fetches 30 photos from the Picsum Photos API.
+- Displays photos in a responsive grid.
+- Searches photos by author name in real time.
+- Toggles photo favourites using React useReducer.
+- Persists favourites using localStorage.
+- Handles loading and API error states.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- Picsum Photos API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+```bash
+git clone https://github.com/Yathish04/Celebrare_Assignment_Photo_Gallery_Web_App.git
+cd Celebrare_Assignment_Photo_Gallery_Web_App
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## React Concepts
+
+- Custom hook: useFetchPhotos
+- State management: useReducer
+- Persistence: localStorage
+- Event handler optimization: useCallback
+- Derived data memoization: useMemo
